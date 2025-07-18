@@ -1,0 +1,92 @@
+package com.example.p1
+
+
+fun main(){
+    // need to print, return there did not print out anything
+    println(birthdayGreeting())
+    println(parameterFunction("Rover"))
+    println(birthdayGreetingParameter(age = 5))
+    println(birthdayGreetingParameter("Rex", age = 10))
+}
+
+// if no need return any type, no need mention data type, eg :
+// fun Basic() : String         -> need return value
+// fun Basic()                  -> no need return value
+fun Basic(){
+    println("Hello world")
+    val count : Int = 10
+    // val name : dataType = n
+    println("You have $count unread message")
+    print("\n")
+
+    // plus
+    val unreadCount : Int = 100
+    val readCount : Int = 50
+    println("You have ${unreadCount + readCount} message in your inbox")
+    print("\n")
+
+    // update variables
+    // val vs var
+    // val = variable cannot be changed (read only)
+    // var = variable can be change
+    var cartTotal = 0
+    println("Cart Total 1 : $cartTotal")
+
+    cartTotal = 20
+    println("Cart Total 1 : $cartTotal")
+
+    print("\n")
+
+    // Increment
+    var msgCount = 10
+    println("You have $msgCount unread message ...")
+    msgCount ++
+    println("You have $msgCount unread message ...")
+
+    print("\n")
+
+    // data type :  Double
+    val trip1 : Double = 3.20
+    val trip2 : Double = 4.10
+    val totalTrip = trip1 + trip2
+    println("totalTrip: " + totalTrip)
+
+
+
+    // data type : String
+    val nextMeeting = "Next Meeting : "
+    val date = "January 1"
+    val reminder = nextMeeting + date
+    println(reminder)
+
+    print("\n")
+
+    // print " (quotation)
+    println(" \"Quoatation\"")
+
+    val notificationEnabled : Boolean = true
+    println(notificationEnabled)
+
+    val notificationDisabled : Boolean = false
+    println(notificationDisabled)
+}
+
+// Define function (return value)
+// fun name : return Type { ... ]
+fun birthdayGreeting() : String {
+    val nameGreeting = "Happy birthday Sam "
+    val ageGreeting = "You are now 5 years old"
+
+    return nameGreeting + ageGreeting
+}
+
+fun parameterFunction(name : String) : String{
+    val greeting = "Happy birthday $name \n"
+    val age = "You are 5 years old now"
+
+    return greeting + age
+}
+
+fun birthdayGreetingParameter(name : String = "Rover", age : Int) : String {
+    return "Happy birthday, $name ! You are $age years old now"
+}
