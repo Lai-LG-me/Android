@@ -48,7 +48,8 @@ fun Basic(){
     // data type :  Double
     val trip1 : Double = 3.20
     val trip2 : Double = 4.10
-    val totalTrip = trip1 + trip2
+    // in real calculation, no need $, put $ only when it is in string
+    val totalTrip = trip1 + trip2           
     println("totalTrip: " + totalTrip)
 
 
