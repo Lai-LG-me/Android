@@ -64,3 +64,19 @@ fun trackScreenTime(timeSpentToday : Int, timeSpentYesterday : Int ) : Boolean {
     else
     	return false
 }
+
+
+//-11--------------------print suplicate code in a function---------------------
+fun main(){
+	CityInfo("Ankara", 27, 31, 82)
+    CityInfo("Tokyo", 32, 36, 10)
+    CityInfo("Cape Town", 59, 64, 2)
+    CityInfo("Guatemala City", 50, 55, 7)
+}
+
+fun CityInfo(city: String, lowTemp : Int, highTemp : Int, rainChance : Int) {
+    println("City : " + city)
+    println("Low temparature: " + lowTemp + ", High temperature: " + highTemp)
+    println("Chance of rain : " + rainChance + "%")
+    println("\n")
+}
