@@ -1,0 +1,11 @@
+for font size, use .sp
+for layout, use .dp
+
+@Composable
+fun GreetingText(message : String, modifier: Modifier = Modifier){    // create a new parameter, add modifier (long one)
+    Text(                     // Text() to write a text
+        text = message,      // text = (the actual words will appear on screen)
+        fontSize = 100.sp
+
+    )
+}
