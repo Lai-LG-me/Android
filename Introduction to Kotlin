@@ -9,12 +9,19 @@ fun main(){
     println(birthdayGreetingParameter("Rex", age = 10))
 }
 
+@Composable
+fun GreetingText(modifier: Modifier = Modifier) {
+}
+
 // if no need return any type, no need mention data type, eg :
 // fun Basic() : String         -> need return value
 // fun Basic()                  -> no need return value
 fun Basic(){
     println("Hello world")
     val count : Int = 10
+    // fun GreetingText(
+    // modifier: Modifier = Modifier    ) { }
+
     // val name : dataType = n
     println("You have $count unread message")
     print("\n")
@@ -24,7 +31,7 @@ fun Basic(){
     val readCount : Int = 50
     println("You have ${unreadCount + readCount} message in your inbox")
     print("\n")
-
+    
     // update variables
     // val vs var
     // val = variable cannot be changed (read only)
